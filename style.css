@@ -1,214 +1,260 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
-        *{
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-        #parent{
-            width: 100%;
-            background-color: rgb(202, 6, 6);
-        }
-        #header{
-           
-            width: 100%;
+#parent {
+    width: 100%;
+    background-color: rgb(202, 6, 6);
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+#header {
+
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+#child1 {
+    width: 15%;
+}
+
+#child2 {
+    display: none;
+    position: relative;
+}
+
+/* #menu_icon{
+            position: absolute;
+            top: 0;
+            left: 100;
+        } */
+
+
+
+#child3 {
+    width: 15%;
+    display: flex;
+    /* flex-wrap: wrap; */
+    /* justify-items: center;
+            justify-content: center; */
+    align-items: center;
+    gap: 10%;
+    color: white;
+}
+
+#parent1 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+#parent2 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+#child1 {
+    width: 15%;
+}
+
+
+.demo {
+    width: 15%;
+    justify-content: space-evenly;
+    align-content: center;
+
+}
+
+.demo img {
+    width: 100%;
+}
+
+.demo a {
+    text-decoration: none;
+    color: white;
+}
+
+
+#parentch {
+    width: 90%;
+    /* height: 180px; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    justify-content: center;
+    text-align: center;
+}
+
+.demo1 {
+    width: 47%;
+    justify-content: space-evenly;
+    align-content: center;
+
+}
+
+.demo1 img {
+    width: 100%;
+}
+
+#demo2 {
+    width: 100%;
+    text-align: center;
+    background-color: azure;
+}
+
+#parentch1 {
+    width: 90%;
+    margin: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.demo3 {
+    width: 20%;
+    margin: 20px;
+    justify-content: space-evenly;
+    justify-content: center;
+
+
+}
+
+.demo3ch {
+    border: 1px solid rgb(82, 81, 79);
+    border-radius: 5%;
+
+}
+
+.demo3ch:hover {
+    transform: scale(1.1);
+
+}
+
+.price:hover {
+    transform: scale(1.1);
+}
+
+#parent3 {
+
+    background-color: bisque;
+    width: 100%
+}
+
+#demo4 {
+    text-align: center;
+    background-color: azure;
+}
+#parent4{
+    background-color: black;
+}
+.demo5{
+    text-align: center;
+    color: white;
+}
+
+.caption {
+    margin-top:50px ;
+}
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 768px) {
+    #header {
+
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+
+    #parentch {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+    }
+
+    .demo1ch {
+
+        justify-content: space-evenly;
+
+    }
+
+    .demo5 {
+        display: flex none;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    #header {
+
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    #child2 {
+        display: block;
+    }
+
+    #child2 {
+        width: 70%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        justify-content: center;
+        color: white;
+        gap: 1%;
+    }
+
+    #parentch {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+    }
+
+    .demo1 {
+        width: 12%;
+    }
+
+    #menu_icon {
+        display: none;
+    }
+
+    #parent4 {
+        width: 100%;
+        padding: 5%;
+
             display: flex;
-            flex-wrap: wrap;
-            justify-content: space-evenly;
-            align-content: center;
-            }
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
 
-             #child1{
-            width: 15%;
-        }
+    }
 
-        #child2{
-            width: 70%;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-evenly;
-            justify-content: center;
-            color: white;
-            gap: 1%;
-        }
-
-        #child3{
-            width: 15%;
-            display: flex;
-            flex-wrap: wrap;
-            justify-items: center;
-            justify-content: center;
-            align-items: center;
-            gap: 10%;
-            color: white;
-        }
-
-        #parent1{
-             width: 100%;
-             display: flex;
-             flex-wrap: wrap;
-             justify-content: space-evenly;
-             align-content: center;
-        } 
-        #parent2{
-             width: 100%;
-             display: flex;
-             flex-wrap: wrap;
-             justify-content: space-evenly;
-             align-content: center;
-        }   
-    
-        #child1{
-            width: 15%;
-        }
-
-        
-        .demo{
-            width: 15%;
-            justify-content: space-evenly;
-            align-content: center;
-
-        }
-        .demo img{
-            width: 100%;
-        }
-        
-
-        #parentch{
-            width: 90%;
-            /* height: 180px; */
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-evenly;
-            justify-content: center;
-            text-align: center;
-        }
-        .demo1{
-            width: 47%;
-            justify-content: space-evenly;
-            align-content: center;
-
-        }
-        .demo1 img{
-            width: 100%;
-        }
-
-        #demo2{
-             width: 100%;
-            text-align: center;
-            background-color: azure;
-        }
-
-        #parentch1{
-            width: 90%;
-            margin: 5px;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-evenly;
-            justify-content: center;
-            text-align: center;
-            
-        }
-         
-        .demo3{
-            width: 20%;
-            margin: 20px;
-            justify-content: space-evenly;
-            justify-content: center;
-            
-           
-        }
-        .demo3ch{
-            border: 1px solid rgb(82, 81, 79);
-            border-radius: 5%;
-            
-        }
-        .demo3ch:hover{
-            transform: scale(1.1);
-            
-        }
-        .price:hover{
-            transform: scale(1.1);
-        }
-        #parent3{
-           
-            background-color: bisque;
-            width: 100%
-
-        }
-
-        #demo4{
-            text-align: center;
-            background-color: azure;
-        }
-
-
-        #parent4{
-            width: 100%;
-            padding: 5%;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-evenly;
-            justify-content: center;
-            align-items: center;
-            background-color: black;
-        }
-
-        .demo5{
-
-            width: 25%;
-            color: white;
-            
-        }
-        .demo5:hover{
-            transform: scale(1.1);
-        }
-
-        .icon1:hover{
-            transform: scale(1.1);}
-
-        @media only screen and (min-width: 768px){
-            #header{
-               
-                display: flex;
-                justify-content: space-evenly;
-                align-items: center;
-            }
-
-        
-            #parentch{
-                display: flex;
-                justify-content: space-evenly;
-                align-items: center;
-                
-            }
-            .demo1ch{
-                 
-                justify-content: space-evenly;
-                
-            }
-
-        }
-
-         @media only screen and (min-width: 1200px){
-            #header{
-                
-                display: flex;
-                justify-content: space-evenly;
-                align-items: center;
-            }
-
-             #parentch{
-                display: flex;
-                justify-content: space-evenly;
-                align-items: center;
-                
-            }
-            .demo1{
-                width:12% ;
-            }
-            
-
-        }
-            
-           
-            
+    .demo5{
+        margin: 50px;
+    }
